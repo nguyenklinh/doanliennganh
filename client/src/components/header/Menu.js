@@ -44,9 +44,7 @@ const Menu = () => {
             <span
               className="material-icons"
               style={{ color: notify.data.length > 0 ? "crimson" : "" }}
-            >
-              favorite
-            </span>
+            ></span>
 
             <span className="notify_length">{notify.data.length}</span>
           </span>
