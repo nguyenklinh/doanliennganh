@@ -26,10 +26,13 @@ export const imageUpload = async (images) => {
     formData.append("upload_preset", "updating");
     formData.append("cloud_name", "dllgbauzn");
 
-    const res = await fetch("POST https://api.cloudinary.com/v1_1//upload", {
-      method: "POST",
-      body: formData,
-    });
+    const res = await fetch(
+      "https://api.cloudinary.com/v1_1/dllgbauzn/upload",
+      {
+        method: "POST",
+        body: formData,
+      },
+    );
 
     const data = await res.json();
     imgArr.push({ public_id: data.public_id, url: data.secure_url });
