@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 
 const PostThumb = ({posts, result}) => {
     const { theme } = useSelector(state => state)
-
+    console.log(posts.src)
     if(result === 0) return <h2 className="text-center text-danger">No Post</h2>
 
     return (
@@ -15,7 +15,7 @@ const PostThumb = ({posts, result}) => {
                         <div className="post_thumb_display">
 
                             {
-                                post.images[0].url.match(/video/i)
+                                post.images[0].url?.match(/video/i)
                                 ?<video controls src={post.images[0].url} alt={post.images[0].url}
                                 style={{filter: theme ? 'invert(1)' : 'invert(0)'}} />
 
