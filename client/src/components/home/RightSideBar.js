@@ -37,19 +37,7 @@ const RightSideBar = () => {
                 </div>
             }
 
-            <div style={{opacity: 0.5}} className="my-2" >
-                <a href="https://fb.me/may.taone.96" target="_blank" rel="noreferrer"
-                style={{wordBreak: 'break-all'}} >
-                    https://fb.me/may.taone.96
-                </a>
-                <small className="d-block">
-                    Welcome to our channel "khanhlinh"
-                </small>
-
-                {/* <small>
-                   &copy; 
-                </small> */}
-            </div>
+          
 
         </div>
     )

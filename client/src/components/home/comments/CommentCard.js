@@ -91,8 +91,8 @@ const CommentCard = ({children, comment, post, commentId}) => {
 
                         : <div>
                             {
-                                comment.tag && comment.tag._id !== comment.user._id &&
-                                <Link to={`/profile/${comment.tag._id}`} className="mr-1">
+                                comment.tag && comment.tag?._id !== comment.user?._id &&
+                                <Link to={`/profile/${comment.tag?._id}`} className="mr-1">
                                     @{comment.tag.username}
                                 </Link>
                             }
